@@ -1,0 +1,653 @@
+{
+  "database_type": "sqlite",
+  "tables": [
+    {
+      "name": "customers",
+      "columns": [
+        {
+          "name": "customer_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "customer_unique_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "customer_zip_code_prefix",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "customer_city",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "customer_state",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "geolocation",
+      "columns": [
+        {
+          "name": "geolocation_zip_code_prefix",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "geolocation_lat",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "geolocation_lng",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "geolocation_city",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "geolocation_state",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "leads_closed",
+      "columns": [
+        {
+          "name": "mql_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "seller_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "sdr_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "sr_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "won_date",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "business_segment",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "lead_type",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "lead_behaviour_profile",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "has_company",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "has_gtin",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "average_stock",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "business_type",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "declared_product_catalog_size",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "declared_monthly_revenue",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "leads_qualified",
+      "columns": [
+        {
+          "name": "mql_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "first_contact_date",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "landing_page_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "origin",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "order_items",
+      "columns": [
+        {
+          "name": "order_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_item_id",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "seller_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "shipping_limit_date",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "price",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "freight_value",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "order_payments",
+      "columns": [
+        {
+          "name": "order_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "payment_sequential",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "payment_type",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "payment_installments",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "payment_value",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "order_reviews",
+      "columns": [
+        {
+          "name": "review_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "review_score",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "review_comment_title",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "review_comment_message",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "review_creation_date",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "review_answer_timestamp",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "orders",
+      "columns": [
+        {
+          "name": "order_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "customer_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_status",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_purchase_timestamp",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_approved_at",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_delivered_carrier_date",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_delivered_customer_date",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "order_estimated_delivery_date",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "product_category_name_translation",
+      "columns": [
+        {
+          "name": "product_category_name",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_category_name_english",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "products",
+      "columns": [
+        {
+          "name": "product_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_category_name",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_name_lenght",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_description_lenght",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_photos_qty",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_weight_g",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_length_cm",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_height_cm",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "product_width_cm",
+          "data_type": "REAL",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    },
+    {
+      "name": "sellers",
+      "columns": [
+        {
+          "name": "seller_id",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "seller_zip_code_prefix",
+          "data_type": "INTEGER",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "seller_city",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        },
+        {
+          "name": "seller_state",
+          "data_type": "TEXT",
+          "nullable": true,
+          "primary_key": 0,
+          "default": null,
+          "comment": null
+        }
+      ],
+      "primary_keys": [],
+      "foreign_keys": [],
+      "indexes": []
+    }
+  ]
+}
